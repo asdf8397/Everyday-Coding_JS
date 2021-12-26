@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>조건문2</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+
+		/*
+		var id = prompt("아이디를 입력하세요");
+
+		if (id === "scv2314") {
+			var password = prompt("비밀번호를 입력하세요")
+			if(password === "asdf8397") {
+				alert("로그인되었습니다.")
+			} else {
+				alert("아이디 또는 비밀번호를 다시 한번 확인해주세요.")
+			}
+		} else {
+			alert("아이디를 확인해주세요")
+		};
+		*/
+
+
+
+		// 논리연산자
+		// &&
+		// &&는 좌항과 우항이 모두 참(true)일 때 참이 된다.
+		// AND 논리연산자
+
+		/*
+		if(true && true) { // 좌우항이 모두 참이므로 alert 1로 실행된다.
+			alert(1);
+		}
+
+		if(true) && (false) { // 우항이 false이므로 실행안된다.
+			alert(2);
+		}
+
+		if(false) && (true) { // 좌항이 false이므로 실행안된다.
+			alert(3);
+		}
+
+		if(false) && (false) { // 양쪽항이 false이므로 실행안된다.
+			alert(4);
+		}
+		*/
+
+
+
+		// 논리연산자 로그인 코드 작성
+
+		// 로직이 바뀐것
+		// var id = prompt("아이디를 입력해주세요.");
+		// var password = prompt("비밀번호를 입력해주세요");
+
+
+
+		// if(id === "scv2314" && password === "asdf8397") {
+		// 	alert("로그인하셨습니다." + id + " 님 반갑습니다.");
+		// } else {
+		// 	alert("아이디를 다시한번 확인해주세요")
+		// }
+
+
+
+		// var id = prompt("아이디를 입력해주세요");
+		// if (id === "scv2314") {
+		// 	var password = prompt("비밀번호를 입력해주세요.");
+		// 	if(password === "asdf8397") {
+		// 		alert("로그인되었습니다.")
+		// 	} else {
+		// 		alert("아이디 또는 비밀번호를 확인해주세요")
+		// 	}
+		// } else {
+		// 	alert("아이디를 확인해주세요")
+		// }
+
+
+
+		// || "||"는 좌우항 중에 하나라도 true라면 true가 되는 논리 연산자다.
+
+		/*
+		if(true || true) { // true 1 실행됨
+			alert(1);
+		}
+
+		if(true || false) { // true 2 실행됨
+			alert(2);
+
+		}
+		if(false || true) { // true 3 실행됨
+			alert(3);
+		}
+
+		if(false || false) { // false 4 실행안됨
+			alert(4);
+		}
+		*/
+
+
+		// var id = prompt("아이디를 입력하세요.");
+		// if (id === "scv2314" || id === "asdf8397" || id === "01075597123") {
+		// 	var password = prompt("비밀번호를 입력하세요")
+		// 	if (password === "asdf8397"){
+		// 		alert("로그인되었습니다.")
+		// 	} else {
+		// 		alert("아이디, 또는 비밀번호를 다시 한번 확인해주세요")
+		// 	}
+		// } else {alert("아이디를 확인 해주세요.")}
+
+
+		// var id = prompt("아이디를 입력해주세요.");
+		// var password = prompt("비밀번호를 입력해주세요.");
+		// if ((id === "scv2314" || id === "asdf8397" || id === "01075597123") && password === "asdf8397") {
+		// 	alert("로그인되었습니다. " + id + "님 반갑습니다.")
+		// } else {
+		// 	alert("아이디 또는 비밀번호를 확인해주세요")
+		// 	}
+
+
+		// ! (부정)
+		// "!"는 부정의 의미로 Boolean의 값을 역전시킨다. true를 false로 false를 true로 만든다. not연산자라고 부른다.
+
+		/*
+		if(!true && !true) {
+			alert(1);
+		}
+
+		if(!true && !false) {
+			alert(2);
+		}
+
+		if(!false && !true) {
+			alert(3);
+		}
+
+		if(!false && !false) {
+			alert(4);
+		}
+		*/
+
+		// boolean의 대체제
+		if(0) { // JS에서는 0을 false
+			alert(1);
+		}
+		if(1) { // JS에서는 1을 true로 가정한다.
+			alert(1)
+		}
+
+		// 기타 false로 간주되는 데이터형
+		if('') {alert('빈문자열')}; // 빈문자열은 알림이 되지 않는다.
+		// 빈문자열은 false로 간주한다.
+
+		if(!'') {alert('빈문자열')}; // 알람으로 출력된다.
+		// !''은  true로 간주한다. 빈문자열이 false이니까 반대
+
+		if('egoing') {alert('undifined')}; // 출력이 된다. if('egoing')으로 들어가있어서
+
+		if('undifined') {alert('undifined')}; // false이므로 알림이 출력안됨, if문이 undifined이기 때문에
+
+		var a;
+		if(!a) {
+			alert('값이 할당되지 않은 변수');
+		}
+		// 실행이 된다 false이지만 a변수없지만 !반대로 true가 된다.
+
+		if(!null) {
+			alert('null')
+		}
+		// null의 !는 반대인 true
+
+		if(!NaN) {
+			alert('NaN');
+		}
+		// !NaN의 !는 반대인 true
+	</script>
+</body>
+</html>
