@@ -12,9 +12,9 @@ if(true && false) {
 var ID = prompt("아이디를 입력해주세요.");
 var Password = prompt("비밀번호를 입력해주세요.");
 
-if (ID === "scv2314") {
+if (ID === "Coffee23") {
     alert("아이디를 정상입력하셨습니다.")
-    if (Password === "asdf8397") {
+    if (Password === "yummy") {
         alert("비밀번호를 정상 입력하셨습니다.")
     } else {
         alert("아이디 또는 비밀번호를 다시 한번 확인해주세요.")

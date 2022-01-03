@@ -1,12 +1,16 @@
 // 객체생성1
-var grades = {'egoing': 10, 'k8805':6, 'sorialgi': 80}; 
-    // ↑ 객체          // ↑ key    ↑ value
+var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80}; 
+    // ↑ 객체//   ↑ key  ↑ value
+console.log(grades);
+console.log(grades.egoing);
 
 // 객체생성2
 var grades1 = {};
 grades1['egoing'] = 20;
 grades1['k8805'] = 16;
 grades1['sorialgi'] = 180;
+
+console.log(grades1['egoing']);
 
 // 객체생성3
 var grades2 = new Object();
@@ -19,7 +23,7 @@ grades2['sorialgi'] = 280;
 console.log(grades1["sorialgi"]);
 alert(grades1.egoing);
 
-var grade = {"Kim": 10, "Park": 20, "Lee": 30};
-for(grade) {
-    document.write("name")
+var grade = {"egoing":10, "k8805": 6, "sorialgi": 80};
+for(key in grade) {
+    // document.write("key":  )
 }
