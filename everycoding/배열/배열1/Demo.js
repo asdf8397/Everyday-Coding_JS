@@ -17,3 +17,10 @@ var team_members = ["Baseball_team", "Soccer_team", "basketball"]
 console.log(team_members[0]);
 console.log(team_members[1]);
 console.log(team_members[2]);
+console.log(team_members[0,1,2]);
+
+var sport_team = ["soccer_team", "baseball_team","pingpong_team"]
+console.log(sport_team[0]);
+console.log(sport_team[1]);
+console.log(sport_team[2]);
+console.log(sport_team[0,1,2]);
