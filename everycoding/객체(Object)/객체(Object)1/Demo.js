@@ -16,9 +16,19 @@ console.log(grades1.sorialgi);
 console.log(grades1["egoing"]);
 console.log(grades1["k8805"]);
 console.log(grades1["sorialgi"]);
-console.log(grades1[egoing]);
-console.log(grades1[k8805]);
-console.log(grades1[sorialgi]);
+
+// 객체생성 출력1 console.log 잘못된것
+// console.log(grades1[egoing]);
+// console.log(grades1[k8805]);
+// console.log(grades1[sorialgi]);
+            
+            // ↑ 잘못된 코드 리뷰
+/*
+grades1[egoing];, grades1[k8805];, grades1[sorialgi];
+는 객체를 생성할때 {"egoing", "k8805", "sorialgi"}를 생성했기때문에
+grades1[egoing], grades1[k8805], grades[sorialgi]는 잘못된 코드이다.
+*/
+
 
 // egoing은 key가 되고 10은 value가 된다. 객체를 만드는 다른 방법이다.
 
@@ -36,9 +46,19 @@ console.log(grades2.sorialgi);
 console.log(grades2["egoing"]);
 console.log(grades2["k8805"]);
 console.log(grades2["sorialgi"]);
-console.log(grades2[egoing]);
-console.log(grades2[k8805]);
-console.log(grades2[sorialgi]);
+
+// console.log(grades2[egoing]);
+// console.log(grades2[k8805]);
+// console.log(grades2[sorialgi]);
+            
+        // ↑ 잘못된 코드 리뷰
+
+/*
+grades2[egoing], grades2[k8805], grades2[sorialgi]
+는 객체 안의 grades2["egoing"], ["k8805"], ["sorialgi"]로
+생성했기 때문에 console.log출력에선 입력값으로 출력해야한다.
+grades2[egoing], [k8805], [sorialgi]로 출력하면 출력되지 않는다.
+*/
 
 
 // 객체생성3
@@ -49,11 +69,24 @@ Animal_age["Rabbit"] = 4;
 
 // 객체생성 출력3
 console.log(Animal_age.Cat);
-console.log(Animal_age.Don);
+console.log(Animal_age.Dog);
 console.log(Animal_age.Rabbit);
 console.log(Animal_age["Cat"]);
 console.log(Animal_age["Dog"]);
 console.log(Animal_age["Rabbit"]);
-console.log(Animal_age[Cat]);
-console.log(Animal_age[Dog]);
-console.log(Animal_age[Rabbit]);
+
+
+// console.log(Animal_age[Cat]);
+// console.log(Animal_age[Dog]);
+// console.log(Animal_age[Rabbit]);
+
+        // ↑ 잘못된 코드 리뷰
+
+/*
+Animal_age["Cat"], ["Dog"], ["Rabbit"]으로 생성했기때문에
+console.log(Animal_age.Cat), (Animal_age.Dog), (Animal_age.Rabbit) 또는
+console.log(Animal_age["Cat"]), (Animal_age["Dog"]), (Animal_age["Rabbit"])
+으로 출력해야한다. 
+console.log(Animal[Cat]), (Animal[Dog]), (Animal[Rabbit])으로는 
+출력되지 않는다.
+*/
